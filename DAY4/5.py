@@ -1,0 +1,5 @@
+my_list = list(map(int, input("Enter list elements separated by space: ").split()))
+asc = sorted(my_list)
+desc = sorted(my_list, reverse=True)
+print("Ascending order:", asc)
+print("Descending order:", desc)
