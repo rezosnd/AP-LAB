@@ -9,7 +9,6 @@ def find_min_max(nums):
 			mx = x
 	return mn, mx
 
-
 if __name__ == "__main__":
 	samples = [3, 1, 4, 1, 5, 9, 2]
 	mn, mx = find_min_max(samples)
