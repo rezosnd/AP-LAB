@@ -4,3 +4,4 @@ for item in my_list:
 	if item not in unique_list:
 		unique_list.append(item)
 print("List without duplicates:", unique_list)
+
