@@ -1,18 +1,71 @@
-phone_book = {'John': '9876543210', 'Alice': '9123456789'}
+phone_directory = {}
 
-phone_book['Bob'] = '9555666777'
-print("Added Bob\n")
+def add_contact():
+    name = input("Enter name: ")
+    phone = input("Enter phone number: ")
+    phone_directory[name] = phone
+    print(f"✓ {name} added!")
+    print()
 
-name = 'John'
-if name in phone_book:
-    print(f"Found: {name} - {phone_book[name]}\n")
+def search_contact():
+    name = input("Enter name to search: ")
+    if name in phone_directory:
+        print(f"{name}: {phone_directory[name]}")
+    else:
+        print("Contact not found!")
+    print()
 
-phone_book['Alice'] = '9111222333'
-print("Updated Alice\n")
+def update_contact():
+    name = input("Enter name to update: ")
+    if name in phone_directory:
+        new_phone = input("Enter new phone number: ")
+        phone_directory[name] = new_phone
+        print(f"✓ {name} updated!")
+    else:
+        print("Contact not found!")
+    print()
 
-del phone_book['Bob']
-print("Deleted Bob\n")
+def delete_contact():
+    name = input("Enter name to delete: ")
+    if name in phone_directory:
+        del phone_directory[name]
+        print(f"✓ {name} deleted!")
+    else:
+        print("Contact not found!")
+    print()
 
-print("All Contacts:")
-for name, phone in phone_book.items():
-    print(f"{name}: {phone}")
+def view_all():
+    if phone_directory:
+        print("=== Phone Directory ===")
+        for name, phone in phone_directory.items():
+            print(f"{name}: {phone}")
+    else:
+        print("Directory is empty!")
+    print()
+
+while True:
+    print("1. Add Contact")
+    print("2. Search Contact")
+    print("3. Update Contact")
+    print("4. Delete Contact")
+    print("5. View All")
+    print("6. Exit")
+    
+    choice = input("Choose option (1-6): ")
+    
+    if choice == '1':
+        add_contact()
+    elif choice == '2':
+        search_contact()
+    elif choice == '3':
+        update_contact()
+    elif choice == '4':
+        delete_contact()
+    elif choice == '5':
+        view_all()
+    elif choice == '6':
+        print("Goodbye!")
+        break
+    else:
+        print("Invalid choice!")
+        print()

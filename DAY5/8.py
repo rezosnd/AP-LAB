@@ -1,5 +1,3 @@
-# Nested Dictionary - Department -> Students -> Marks
-
 departments = {
     'CS': {'John': 85, 'Alice': 90},
     'ECE': {'Charlie': 88, 'Diana': 92}
