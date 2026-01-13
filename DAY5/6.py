@@ -1,10 +1,11 @@
-# Remove Duplicates from List Using Set - Simple Version
-
-my_list = [1, 2, 2, 3, 3, 4, 5, 5]
-
-print("Original List:", my_list)
-
-# Remove duplicates using set
-unique_list = list(set(my_list))
-
-print("After Removing Duplicates:", unique_list)
+my_dict = {'banana': 3, 'apple': 5, 'cherry': 2}
+print("Original Dictionary:", my_dict)
+print()
+tuple_list = list(my_dict.items())
+print("Convert to Tuples:", tuple_list)
+print()
+sorted_list = sorted(tuple_list, key=lambda x: x[1])
+print("Sorted (by value):", sorted_list)
+print()
+new_dict = dict(sorted_list)
+print("Convert back to Dictionary:", new_dict)
