@@ -1,5 +1,3 @@
-
-# Simple bubble sort for ascending and descending order (no 'in' used)
 def bubble_sort(lst, reverse=False):
 	arr = lst[:]
 	n = len(arr)

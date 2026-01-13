@@ -1,5 +1,3 @@
-
-# Find min and max in a list without using a function
 samples = [3, 1, 4, 1, 5, 9, 2]
 
 if not samples:
@@ -13,4 +11,4 @@ else:
             mx = x
     print(f"List: {samples}")
     print(f"Min: {mn}, Max: {mx}")
-
+    

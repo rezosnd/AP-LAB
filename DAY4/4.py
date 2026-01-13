@@ -1,5 +1,3 @@
-
-# Function to remove duplicates from a list without using 'in'
 def remove_duplicates(lst):
 	unique = []
 	for i in range(len(lst)):
