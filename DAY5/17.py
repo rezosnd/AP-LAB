@@ -16,9 +16,7 @@ if set1 <= set2:
     print("✓ Set 1 is a subset of Set 2 (using <=)")
 else:
     print("✗ Set 1 is NOT a subset of Set 2")
-
 print()
-
 set3 = {1, 2, 3}
 set4 = {1, 2}
 
