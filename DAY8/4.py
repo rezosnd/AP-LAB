@@ -1,4 +1,3 @@
-# Script to count lines, words, and characters in a file
 def count_file_stats(filename):
 	try:
 		with open(filename, 'r', encoding='utf-8') as file:

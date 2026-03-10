@@ -1,6 +1,4 @@
 import pandas as pd
-
-# Script to read a CSV file using pandas and print the first 5 rows
 def print_first_five_rows(filename):
 	try:
 		df = pd.read_csv(filename)

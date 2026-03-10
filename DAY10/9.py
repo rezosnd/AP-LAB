@@ -1,0 +1,28 @@
+import numpy as np
+
+A = np.array([[1, 2, 3],
+              [4, 5, 6],
+              [7, 8, 9]])
+
+B = np.array([[9, 8, 7],
+              [6, 5, 4],
+              [3, 2, 1]])
+
+print("Matrix A:")
+print(A)
+
+print("\nMatrix B:")
+print(B)
+print("\nElement-wise Multiplication (A * B):")
+print(A * B)
+
+print("\nMatrix Multiplication (A @ B):")
+print(A @ B)
+
+print("\nUsing np.dot(A, B):")
+print(np.dot(A, B))
+
+print("\nTranspose of A:")
+print(A.T)
+
+print("\nDeterminant of A:", np.linalg.det(A))

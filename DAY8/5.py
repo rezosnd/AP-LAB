@@ -1,6 +1,5 @@
 import string
 
-# Script to read a file and remove punctuation
 def remove_punctuation_from_file(filename):
 	try:
 		with open(filename, 'r', encoding='utf-8') as file:

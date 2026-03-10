@@ -1,6 +1,5 @@
 import csv
 
-# Script to store student records in a CSV file
 def add_student_record(filename, student_data):
 	try:
 		file_exists = False

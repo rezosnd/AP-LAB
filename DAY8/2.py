@@ -1,4 +1,3 @@
-# Script to append data to a file
 def append_to_file(filename, data):
 	try:
 		with open(filename, 'a', encoding='utf-8') as file:

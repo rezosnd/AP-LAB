@@ -1,4 +1,4 @@
-# Script to copy content from one file to another
+
 def copy_file_content(src, dest):
 	try:
 		with open(src, 'r', encoding='utf-8') as fsrc:
